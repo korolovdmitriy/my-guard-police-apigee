@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables name="EV-GetId">
+    <DisplayName>EV-ExtractId</DisplayName>
+    <Source>request</Source>
+    <URIPath>
+        <Pattern ignoreCase="true">/police-stations/{id}</Pattern>
+        <Pattern ignoreCase="true">/police-stations/{id}/crimes</Pattern>
+        <Pattern ignoreCase="true">/police-stations/{id}/check-crimes</Pattern>
+    </URIPath>
+    <VariablePrefix>urirequest</VariablePrefix>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

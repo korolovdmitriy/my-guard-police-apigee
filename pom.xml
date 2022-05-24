@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>apigee</groupId>
-    <artifactId>my-guard-police-test</artifactId>
-    <name>my-guard-police-test</name>
+    <artifactId>my-guard-police</artifactId>
+    <name>my-guard-police</name>
     <packaging>pom</packaging>
     <version>1.0</version>
     <pluginRepositories>
