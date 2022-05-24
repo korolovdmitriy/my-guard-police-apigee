@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-TooManyRequests">
+    <DisplayName>RF-TooManyRequests</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">
+                {
+                 "Apigee Server": "{apiproxy.name}",
+                 "status": 429,
+                 "error": "Too many requests",
+                 "message": "You have surpassed rate limit",
+                 "path": "{request.path}"
+                }
+            </Payload>
+            <StatusCode>429</StatusCode>
+            <ReasonPhrase>Too Many Requests</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

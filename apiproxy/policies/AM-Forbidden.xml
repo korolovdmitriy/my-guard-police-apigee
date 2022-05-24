@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Forbidden">
+    <DisplayName>AM-Forbidden</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">
+            {
+             "Apigee Server": "{apiproxy.name}",
+             "status": 403,
+             "error": "Forbidden",
+             "message": "You don't have sufficient rights",
+             "path": "{request.path}"
+            }
+        </Payload>
+        <StatusCode>403</StatusCode>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

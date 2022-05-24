@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables name="EV-OauthToken">
+    <Source>request</Source>
+    <Header name="Authorization">
+        <Pattern ignoreCase="false">{oauthtoken}</Pattern>
+    </Header>
+    <VariablePrefix>clientrequest</VariablePrefix>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

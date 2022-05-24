@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-AddTokenHeader">
+    <DisplayName>AM-AddTokenHeader</DisplayName>
+    <Add>
+        <Headers>
+            <Header name="Authorization">{clientrequest.oauthtoken}</Header>
+        </Headers>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request"/>
+</AssignMessage>
