@@ -1,0 +1,25 @@
+{
+  "name": "api-proxy-testing",
+  "version": "1.0.0",
+  "description": "Unit test for API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korolovdmitriy/api-proxy-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korolovdmitriy/api-proxy-testing/issues"
+  },
+  "homepage": "https://github.com/korolovdmitriy/api-proxy-testing#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
